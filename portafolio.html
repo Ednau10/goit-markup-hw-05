@@ -200,15 +200,17 @@
         </div>
     </section>
     
-    
     <footer>
         <div class="footer-aling">
-            <div>
-                <a class="logo" href="/"><h4>WebStudio</h4></a><!--Logo WebStudio-->
+            <div class="col1__footer">
+                <a class="logo" href="/">
+                    <h4>WebStudio</h4>
+                </a>
+                <!--Logo WebStudio-->
                 <ul>
                     <li>
                         <address>
-                            Calz. Ticomán 500,<br>Ciudad de México, <br>CDMX, México
+                            Calz. Ticomán 500,<br />Ciudad de México, <br />CDMX, México
                         </address>
                     </li>
                     <li><a href="mailto:info@example.com">info@example.com</a></li>
@@ -217,11 +219,11 @@
             </div>
             <div class="rrss">
                 <p>ENCUENTRANOS EN:</p>
-                
+
                 <div class="foot-group-rrss">
                     <div class="footrrss">
                         <svg class="footrrss-img">
-                            <use href="./images/symbol-defs.svg#icon-instagram-with-circle"></use>                                
+                            <use href="./images/symbol-defs.svg#icon-instagram-with-circle"></use>
                         </svg>
                     </div>
                     <div class="footrrss">
@@ -236,13 +238,27 @@
                     </div>
                     <div class="footrrss">
                         <svg class="footrrss-img">
-                            <use href="./images/symbol-defs.svg#icon-linkedin-with-circle"></use>
+                            <use href="./images/symbol-defs.svg#icon-linkedin-with-circle" class="foot__svg_rrss"></use>
                         </svg>
                     </div>
                 </div>
             </div>
-        </div>    
-    </footer>  
+        </div>
+        <div class="footer-form">
+            <form name="signup_form" autocomplete="on" novalidate id="footer-form">
+                <label for="user_email">SUSCRÍBASE AL BOLETÍN INFORMATIVO
+                    <br>
+                <input type="email" name="email" id="user_email" placeholder="Correo electrónico"/>
+                </label>
+                <button id="send-email-form-footer" type="submit">Suscríbase 
+                    <svg class="enviar_svg">
+                        <use href="./images/symbol-defs.svg#icon-enviar"></use>
+                    </svg>
+                </button>
+
+            </form>
+        </div>
+    </footer>
     
 </body>
 </html>
